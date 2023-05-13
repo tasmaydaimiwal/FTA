@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Chatbot</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom chatbot styles */
+    .chat-container {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .chat-message {
+      margin-bottom: 10px;
+    }
+    .user-message {
+      background-color: #dcf8c6;
+    }
+    .chatbot-message {
+      background-color: #e7e7e7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1>Advanced Chatbot</h1>
+        <div class="chat-container" id="chat-container">
+          <div class="chat-message chatbot-message">Hi there! How can I assist you?</div>
+        </div>
+        <form id="chat-form">
+          <input type="text" id="user-input" class="form-control" placeholder="Enter your message...">
+          <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
